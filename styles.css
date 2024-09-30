@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+    font-family: Arial, sans-serif;
+}
+
+.toolbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.toolbar input[type="color"], .toolbar button {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.toolbar button:hover {
+    background-color: #f0f0f0;
+}
+
+canvas {
+    display: block; /* Remove default inline spacing */
+    width: 100vw;   /* Make the canvas cover the full width of the viewport */
+    height: 100vh;  /* Make the canvas cover the full height of the viewport */
+    cursor: crosshair; /* Use a crosshair cursor for drawing */
+}
